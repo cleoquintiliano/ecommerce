@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block site_wrapper %}
+<div id="main">
+	<a href="#content" class="skip_link">Ir para o menu principal</a>
+	<div id="banner">
+		<div class="bannerIEPadder">
+			<div class="cart_box">
+			[link para o carrinho]
+			</div>
+			Alfa Technologies
+		</div>
+	</div>
+
+	<div id="navigation">
+		<div class="navIEPadder">
+			[Navegação]
+		</div>
+	</div>
+	<div id="middle">
+		<div id="sidebar">
+			<div class="sidebarIEPadder">
+			[Caixa de busca]
+			<br/>
+			[Listagem de categorias]
+			</div>
+		</div>
+		<div id="content">
+			<a name="content"></a>
+			<div class="contentIEPadder">
+				{% block content %}{% endblock %}
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footerIEPadder">
+			[Rodapé]
+		</div>
+	</div>
+</div>	
+{% endblock %}}
+		
+
+		
